@@ -51,15 +51,22 @@ nav {
 body {
     background-color: #212121;
 }
+.cover-wrap {
+    /* width: 573px; */
+    width: calc(50% - 3px);
+    /* overflow: hidden; */
+}
 
 .cover-image-wrap img {
     width: 100%;
     height: auto;
-    display: block;
-    z-index: -1;
 }
 
 .cover-image-wrap {
+    height: 428px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
     transition: brightness 0.5s;
 }
 
