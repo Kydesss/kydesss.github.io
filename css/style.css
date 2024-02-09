@@ -109,3 +109,52 @@ body {
     color: white;
     transition: opacity 1s;
 }
+@media screen and (max-width: 991px) {
+    .element-spacing {
+        gap: 10px;
+    }
+}
+/* .element-spacing {
+    gap: 10px;
+} */
+.social-icon a img {
+    filter: invert(100%);
+    transition: 0.5s;
+}
+
+.social-icon a img:hover {
+    /* filter: invert(100%); */
+    opacity: 0.7;
+    scale: 1.2;
+}
+
+.custom-flex {
+    display: flex;
+    justify-content: end;
+}
+
+#back-to-top {
+    /* filter: invert(100%); */
+    /* display: none; */
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: black;
+    border-radius: calc(0.5rem - 2px);
+    border: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    transition: opacity 0.5s, background-color 0.3s, color 0.3s;
+}
+
+#back-to-top:hover {
+    background-color: black;
+    color: white;
+}

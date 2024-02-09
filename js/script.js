@@ -13,3 +13,18 @@ document.getElementById("arrow").addEventListener("click", function (event) {
         console.error('Element with id "section" not found');
     }
 });
+
+var backToTopButton = document.getElementById("back-to-top");
+
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 300) {
+        backToTopButton.style.opacity = "1";
+    } else {
+        backToTopButton.style.opacity = "0";
+    }
+});
+
+backToTopButton.addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
