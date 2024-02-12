@@ -52,11 +52,6 @@ footer {
 body {
     background-color: #212121;
 }
-.cover-wrap {
-    /* width: 573px; */
-    width: calc(50% - 3px);
-    /* overflow: hidden; */
-}
 
 .cover-image-wrap img {
     width: 100%;
@@ -64,7 +59,7 @@ body {
 }
 
 .cover-image-wrap {
-    max-height: 428px;
+    max-height: 357.75px;
     overflow: hidden;
     display: flex;
     align-items: center;
